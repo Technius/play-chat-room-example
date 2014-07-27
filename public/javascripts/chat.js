@@ -21,12 +21,16 @@
 		
 		socket2.onopen = function() {
 			socket = socket2;
+			socket.send(JSON.stringify({
+				username: username
+			}));
 			addMessage("Connected to server!");
 		};
 		
 		socket2.onmessage = function(message) {
 			var data = JSON.parse(message.data);
-			addMessage(data.username + ": " + data.message);
+			var name = data.username ? data.username + ":" : "[System]";
+			addMessage(name + " " + data.message);
 		};
 		
 		socket2.onerror = function() {
@@ -48,7 +52,6 @@
 			}
 			
 			socket.send(JSON.stringify({
-				username: username,
 				message: msg
 			}));
 			
