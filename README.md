@@ -1,14 +1,14 @@
-Play-Chat-Room-Example
+Play Chat Room Example
 ======================
 
 This is an example chat room webapp written using Scala and the Play Framework. This actually does not have "real" username support yet.
 
-Communication is handled using WebSockets. The server code is very simple: a singleton pair of Enumerator and Channel is used for pushing messages to all of the Iteratees. See the [controller code](https://github.com/Technius/Play-Chat-Room-Example/blob/master/app/controllers/Application.scala) for more information.
+Communication is handled using WebSockets. The server code is very simple: a singleton pair of Enumerator and Channel is used for pushing messages to all of the Iteratees. See the [controller code](https://github.com/Technius/play-chat-room-example/blob/master/app/controllers/Application.scala) for more information.
 
 Usage
 -----
-1. Clone the project: ```git clone https://github.com/Technius/Play-Chat-Room-Example.git```
-2. Open a terminal and change to the directory: ```cd Play-Chat-Room-Example```
+1. Clone the project: ```git clone https://github.com/Technius/play-chat-room-example.git```
+2. Open a terminal and change to the directory: ```cd play-chat-room-example```
 3. Run the application: ```activator run```
 4. In your web browser, go to ```http://localhost:9000/```
 
