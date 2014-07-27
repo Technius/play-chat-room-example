@@ -1,0 +1,35 @@
+@()
+
+@scripts = {
+	<script src="@routes.Assets.at("javascripts/chat.js")"></script>
+}
+
+@main("Play Chat Room Example", scripts = Some(scripts)) {
+	<ul id="messages" class="list-group"></ul>
+	
+	<div class="input-group">
+		<input id="chat-input" type="text" class="form-control">
+		<div class="input-group-btn">
+			<button id="send-btn" class="btn btn-default">Send</button>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="username-dialog" tabindex="-1" role="dialog" 
+		aria-labelledby="modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="modal-label">Pick a username</h4>
+				</div>
+				<div class="modal-body">
+					<p>Please pick a username!</p>
+					<input id="username-input" type="text" class="form-control">
+				</div>
+				<div class="modal-footer">
+					<button id="username-confirm" type="button" 
+						class="btn btn-primary">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+}

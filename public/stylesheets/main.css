@@ -1,0 +1,8 @@
+#messages {
+	height: 70vh;
+	overflow-y: scroll;
+}
+
+#messages li {
+	border-radius: 0px;
+}
