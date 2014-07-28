@@ -14,3 +14,7 @@ libraryDependencies ++= Seq(
   "org.webjars" % "bootstrap" % "3.2.0",
   "org.webjars" % "jquery" % "1.11.1"
 )
+
+javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+
+scalacOptions += "-target:jvm-1.7"
