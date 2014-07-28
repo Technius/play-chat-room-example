@@ -5,7 +5,8 @@
 	var username;
 	
 	function addMessage(message) {
-		var scroll = messages[0].scrollTop == messages[0].scrollTopMax ? true : false;
+		var scroll = messages.scrollTop() == messages[0].scrollHeight 
+			- messages[0].clientHeight ? true : false;
 		var li = $('<li class="list-group-item"></li>');
 		li.text(message);
 		messages.append(li);
