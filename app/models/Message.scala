@@ -1,4 +1,4 @@
-package model
+package models
 
 import play.api.mvc.WebSocket.FrameFormatter
 import play.api.libs.json.Json

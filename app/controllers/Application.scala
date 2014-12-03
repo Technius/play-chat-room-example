@@ -1,6 +1,6 @@
 package controllers
 
-import model.Message
+import models.Message
 import play.api._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json._
